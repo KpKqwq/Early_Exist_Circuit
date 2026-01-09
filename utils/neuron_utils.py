@@ -326,24 +326,6 @@ def extract_choice_once_fail(text):
     return "None"
 
 
-def extract_boxfailed_text(text):
-    pattern = r"""
-        (?:
-            \*\*\s*Answer\s*\*\*
-            | \*\*\s*Final\s+Answer\s*\*\*
-            | Answer
-            | Final\s+Answer
-        )
-        [:：]?\s*
-        (.+)
-    """
-
-    match = re.findall(pattern, text, re.IGNORECASE | re.VERBOSE | re.DOTALL)
-    if match:
-        return match[0].strip()
-
-    return "None"
-
 
 def read_jsonl(file_path):
     if not os.path.exists(file_path): return []
