@@ -44,42 +44,7 @@ This repository currently includes:
 - **Neuron-based early generation / early exit code**
 - Utility functions used by the above pipelines
 
-## Requirements
 
-Please prepare your environment with Python and the dependencies required by the scripts.
-
-A typical setup may look like:
-
-```bash
-conda create -n neat python=3.10 -y
-conda activate neat
-pip install -r requirements.txt
-```
-
-> Note: You may need to additionally install packages required by your local setup, such as `transformers`, `torch`, `vllm`, `nnsight`, `einops`, `matplotlib`, and related dependencies.
-
-## Usage
-
-### 1. Identify exit-associated neurons
-
-Use `identify_neurons.py` to identify neurons relevant to early reasoning exit:
-
-```bash
-python identify_neurons.py \
-  --model_path /path/to/model \
-  --output_data
-```
-
-### 2. Run neuron-based early exit generation
-
-Use `neuro_early_generate.py` to perform generation with neuron-based early exit:
-
-```bash
-python neuro_early_generate.py \
-  --model_path /path/to/model \
-  --data_path /path/to/data.json \
-  --output_file /path/to/output.jsonl
-```
 
 ## Method
 
@@ -91,15 +56,7 @@ NEAT identifies **exit-associated neurons** and tracks their activation patterns
 
 This enables efficient reasoning without requiring an additional probing model, extra rollout computation, or externally labeled datasets.
 
-## Current Status
 
-- [x] Paper released
-- [x] Code released
-- [ ] Add dependency list / `requirements.txt`
-- [ ] Add benchmark preparation instructions
-- [ ] Add pretrained neuron sets / checkpoints
-- [ ] Add full reproduction scripts
-- [ ] Add examples and expected outputs
 
 ## Citation
 
@@ -114,7 +71,6 @@ If you find this repository useful, please cite:
 }
 ```
 
-## Acknowledgement
 
 If this project is helpful to your research, please consider giving this repository a star.
 
