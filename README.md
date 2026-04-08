@@ -71,9 +71,3 @@ If you find this repository useful, please cite:
 }
 ```
 
-
-If this project is helpful to your research, please consider giving this repository a star.
-
-## Contact
-
-For questions or collaborations, please open an issue or contact the authors.
