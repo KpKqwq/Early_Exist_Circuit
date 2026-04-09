@@ -7,7 +7,7 @@ Official repository for our paper **NEAT: Neuron-Based Early Exit for Large Reas
 
 ## News
 
-- **[2026-04]** Our paper has been accepted 🎉
+- **[2026-04]** Our paper has been accepted to ACL2026🎉
 - **[2026-02]** We released the paper on arXiv: [NEAT: Neuron-Based Early Exit for Large Reasoning Models](https://arxiv.org/abs/2602.02010)
 
 ## Overview
